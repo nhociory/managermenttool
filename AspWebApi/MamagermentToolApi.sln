@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2A48AD58-3456-4860-9FEA-50154E240FF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC6832D1-F214-449F-8149-391C481B2428}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MamagermentToolApi", "src\MamagermentToolApi\MamagermentToolApi.xproj", "{7256D5BF-E991-4745-A2ED-74B5774F296D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7256D5BF-E991-4745-A2ED-74B5774F296D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7256D5BF-E991-4745-A2ED-74B5774F296D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7256D5BF-E991-4745-A2ED-74B5774F296D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7256D5BF-E991-4745-A2ED-74B5774F296D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7256D5BF-E991-4745-A2ED-74B5774F296D} = {2A48AD58-3456-4860-9FEA-50154E240FF0}
+	EndGlobalSection
+EndGlobal
