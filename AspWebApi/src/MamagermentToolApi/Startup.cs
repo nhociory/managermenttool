@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.Web.Http;
 
 namespace MamagermentToolApi
 {
@@ -52,5 +53,15 @@ namespace MamagermentToolApi
 
             app.UseMvc();
         }
+ 
+        protected void Application_Start(object sender, EventArgs e)
+        {
+            RouteTable.Routes.MapHttpRoute(
+            name: "ActionApi",
+            routeTemplate: "api/{controller}/{action}/{incurrcode}/{incurrvalue}/{outcurrcode}",
+            defaults: new { incurrvalue = System.Web.Http.RouteParameter.Optional }
+            );
+        }
+        <span id="ezoic-pub-ad-placeholder-118" class="ezoic-adpicker-ad" data-ezadpicker="118" data-ez-position-type="native_mid"></span>
     }
 }
