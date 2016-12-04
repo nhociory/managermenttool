@@ -1,0 +1,110 @@
+<span id="ezoic-pub-ad-placeholder-107" class="ezoic-adpicker-ad" data-ezadpicker="107" data-ez-position-type="under_second_paragraph"></span><span style="display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px;text-align:center !important;" class="ezoic-ad box-2 adtester-container adtester-container-107">
+<span id="div-gpt-ad-programming_free_com-box-2-0" ezaw="336" ezah="280" style="position:relative;z-index:0;display:block;" class="ezoic-ad" data-google-query-id="CNua1qfk2dACFVSmaAod3XwJLA"><div id="google_ads_iframe_/1254144/programming_free_com-box-2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1254144/programming_free_com-box-2_0" title="3rd party ad content" name="google_ads_iframe_/1254144/programming_free_com-box-2_0" width="336" height="280" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1254144/programming_free_com-box-2_0__hidden__" title="" name="google_ads_iframe_/1254144/programming_free_com-box-2_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></span>
+</span><!DOCTYPE html>
+ 
+<html data-ng-app="currencyApp" style="background-attachment: scroll;">
+<head runat="server">
+    <title>Currency Calculator | ProgrammingFree</title>
+    <link href="style/bootstrap.min.css" rel="stylesheet" />
+    <script src="scripts/angularjs.min.js"></script>    
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+  <form id="form1" runat="server">
+   <div class="container" data-ng-controller="currencyController">    
+      <div class="row">                       
+        <div > 
+        <p>Currency Converter</p>                   
+        <table>
+           <tr>
+             <td>
+               <div>
+                 <asp:TextBox ID="tbFromCurrency" runat="server" name="number" data-ng-model="fromcurrval" is-number></asp:TextBox>                                                                    
+                 <asp:TextBox ID="tbToCurrency" runat="server" Text="{{outcurrvalue}}" ReadOnly="true" data-ng-model="outcurrvalue"></asp:TextBox>                             
+               </div>
+             </td>
+             <td>
+               <asp:DropDownList ID="ddFromCurrency" runat="server" data-ng-model="fromcurrency" CssClass="inputsize" data-ng-change="update()">
+                <asp:ListItem Value="EUR">EURO</asp:ListItem>
+                <asp:ListItem Value="USD">US DOLLAR</asp:ListItem>
+                <asp:ListItem Value="JPY">JAPANESE YEN</asp:ListItem>
+                <asp:ListItem Value="BGN">BULGARIAN LEV</asp:ListItem>
+                <asp:ListItem Value="CZK">CZECH REPUBLIC KORUNA</asp:ListItem>
+                <asp:ListItem Value="DKK">DANISH KRONE</asp:ListItem>
+                <asp:ListItem Value="GBP">BRITISH POUND STERLING</asp:ListItem>
+  <asp:ListItem Value="HUF">HUNGARIAN FORINT</asp:ListItem>
+  <asp:ListItem Value="LTL">LITHUANIAN LITAS</asp:ListItem>
+  <asp:ListItem Value="LVL">LATVIAN LATS</asp:ListItem>
+  <asp:ListItem Value="PLN">POLISH ZLOTY</asp:ListItem>
+  <asp:ListItem Value="RON">ROMANIAN LEU</asp:ListItem>
+  <asp:ListItem Value="SEK">SWEDISH KRONA</asp:ListItem>
+  <asp:ListItem Value="CHF">SWISS FRANC</asp:ListItem>
+  <asp:ListItem Value="NOK">NORWEGIAN KRONE</asp:ListItem>
+  <asp:ListItem Value="HRK">CROATIAN KNA</asp:ListItem>
+  <asp:ListItem Value="RUB">RUSSIAN RUBLE</asp:ListItem>
+  <asp:ListItem Value="TRY">TURKISH LURA</asp:ListItem>
+  <asp:ListItem Value="AUD">AUSTRALIAN DOLLAR</asp:ListItem>
+  <asp:ListItem Value="BRL">BRAZILIAN REAL</asp:ListItem>
+  <asp:ListItem Value="CAD">CANADIAN DOLLAR</asp:ListItem>
+  <asp:ListItem Value="CNY">CHINESE YUAN</asp:ListItem>
+  <asp:ListItem Value="HKD">HONG KONG DOLLAR</asp:ListItem>
+  <asp:ListItem Value="IDR">INDONESIAN RUPIAH</asp:ListItem>
+  <asp:ListItem Value="ILS">ISREALI NEW SHEQEL</asp:ListItem>
+  <asp:ListItem Value="INR">INDIAN RUPEE</asp:ListItem>
+  <asp:ListItem Value="KRW">SOUTH KOREAN WON</asp:ListItem>
+  <asp:ListItem Value="MXN">MEXICAN PESO</asp:ListItem>
+  <asp:ListItem Value="MYR">MALAYSIAN RINGITT</asp:ListItem>
+  <asp:ListItem Value="NZD">NEW ZEALAND DOLLAR</asp:ListItem>
+  <asp:ListItem Value="PHP">PHILIPPINE PESO</asp:ListItem>
+  <asp:ListItem Value="SGD">SINGAPORE DOLLAR</asp:ListItem>
+  <asp:ListItem Value="THB">THAI BAHT</asp:ListItem>
+  <asp:ListItem Value="ZAR">SOUTH AFRICAN RAND</asp:ListItem>
+               </asp:DropDownList>
+               <asp:DropDownList ID="ddToCurrency" runat="server" data-ng-model="tocurrency" CssClass="inputsize" data-ng-change="update()">
+                <asp:ListItem Value="EUR">EURO</asp:ListItem>
+                <asp:ListItem Value="USD">US DOLLAR</asp:ListItem>
+                <asp:ListItem Value="JPY">JAPANESE YEN</asp:ListItem>
+                <asp:ListItem Value="BGN">BULGARIAN LEV</asp:ListItem>
+                <asp:ListItem Value="CZK">CZECH REPUBLIC KORUNA</asp:ListItem>
+                <asp:ListItem Value="DKK">DANISH KRONE</asp:ListItem>
+                <asp:ListItem Value="GBP">BRITISH POUND STERLING</asp:ListItem>
+  <asp:ListItem Value="HUF">HUNGARIAN FORINT</asp:ListItem>
+  <asp:ListItem Value="LTL">LITHUANIAN LITAS</asp:ListItem>
+  <asp:ListItem Value="LVL">LATVIAN LATS</asp:ListItem>
+  <asp:ListItem Value="PLN">POLISH ZLOTY</asp:ListItem>
+  <asp:ListItem Value="RON">ROMANIAN LEU</asp:ListItem>
+  <asp:ListItem Value="SEK">SWEDISH KRONA</asp:ListItem>
+  <asp:ListItem Value="CHF">SWISS FRANC</asp:ListItem>
+  <asp:ListItem Value="NOK">NORWEGIAN KRONE</asp:ListItem>
+  <asp:ListItem Value="HRK">CROATIAN KNA</asp:ListItem>
+  <asp:ListItem Value="RUB">RUSSIAN RUBLE</asp:ListItem>
+  <asp:ListItem Value="TRY">TURKISH LURA</asp:ListItem>
+  <asp:ListItem Value="AUD">AUSTRALIAN DOLLAR</asp:ListItem>
+  <asp:ListItem Value="BRL">BRAZILIAN REAL</asp:ListItem>
+  <asp:ListItem Value="CAD">CANADIAN DOLLAR</asp:ListItem>
+  <asp:ListItem Value="CNY">CHINESE YUAN</asp:ListItem>
+  <asp:ListItem Value="HKD">HONG KONG DOLLAR</asp:ListItem>
+  <asp:ListItem Value="IDR">INDONESIAN RUPIAH</asp:ListItem>
+  <asp:ListItem Value="ILS">ISREALI NEW SHEQEL</asp:ListItem>
+  <asp:ListItem Value="INR">INDIAN RUPEE</asp:ListItem>
+  <asp:ListItem Value="KRW">SOUTH KOREAN WON</asp:ListItem>
+  <asp:ListItem Value="MXN">MEXICAN PESO</asp:ListItem>
+  <asp:ListItem Value="MYR">MALAYSIAN RINGITT</asp:ListItem>
+  <asp:ListItem Value="NZD">NEW ZEALAND DOLLAR</asp:ListItem>
+  <asp:ListItem Value="PHP">PHILIPPINE PESO</asp:ListItem>
+  <asp:ListItem Value="SGD">SINGAPORE DOLLAR</asp:ListItem>
+  <asp:ListItem Value="THB">THAI BAHT</asp:ListItem>
+  <asp:ListItem Value="ZAR">SOUTH AFRICAN RAND</asp:ListItem>
+               </asp:DropDownList>
+             </td>
+             </tr>
+          </table>   
+          <div>                       
+          <img src="../images/loading-blue.gif" width="50px" height="50px" alt="Loading.." data-ng-show="loading" />
+        </div>                     
+      </div>
+    </div> 
+   </div>   
+ </form>
+</body>
+</html>
