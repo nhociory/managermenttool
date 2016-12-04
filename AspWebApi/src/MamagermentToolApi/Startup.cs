@@ -52,5 +52,15 @@ namespace MamagermentToolApi
 
             app.UseMvc();
         }
+        
+        public void Application_Start(object sender, EventArgs e)
+        {
+            RouteTable.Routes.MapHttpRoute(
+            name: "ActionApi",
+            routeTemplate: "api/{controller}/{action}/{incurrcode}/{incurrvalue}/{outcurrcode}",
+            defaults: new { incurrvalue = System.Web.Http.RouteParameter.Optional }
+            );
+        }
+        <span id="ezoic-pub-ad-placeholder-118" class="ezoic-adpicker-ad" data-ezadpicker="118" data-ez-position-type="native_mid"></span>
     }
 }
